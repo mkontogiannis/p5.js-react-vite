@@ -1,5 +1,5 @@
-import { P5CanvasInstance, Sketch } from "@p5-wrapper/react";
-import P5 from "p5";
+import { P5CanvasInstance, Sketch } from '@p5-wrapper/react';
+import P5 from 'p5';
 
 export const mySketch: Sketch = (p5: P5CanvasInstance) => {
   const logoWidth = 250;
@@ -15,7 +15,7 @@ export const mySketch: Sketch = (p5: P5CanvasInstance) => {
     );
   };
 
-  p5.preload = () => (logo = p5.loadImage("/assets/p5js.svg"));
+  p5.preload = () => (logo = p5.loadImage('/assets/p5js.svg'));
 
   p5.setup = () => {
     p5.createCanvas(p5.windowWidth, p5.windowHeight);
