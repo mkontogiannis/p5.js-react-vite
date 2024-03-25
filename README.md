@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# A p5.js React/Vite boilerplate w/ Typescript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple boilerplate for writing p5.js sketches in React with typescript.
 
-Currently, two official plugins are available:
+It uses the awesome [@p5-wrapper/react](https://github.com/P5-wrapper/react) library for rendering the `Sketch` as a `React` component and [react-helmet](https://github.com/nfl/react-helmet) for super easy `SEO` configuration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+DEMO on Vercel (https://p5-js-react-vite.vercel.app/)
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone the repository without the whole history:<br />
+`git clone --depth 1 git@github.com:mkontogiannis/p5.js-react-vite.git`
 
-- Configure the top-level `parserOptions` property like this:
+The application has been created using [create vite](https://github.com/vitejs/vite/tree/main/packages/create-vite) and uses its standard development / deployment process.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+For `SEO` you will have to update the `seo.json` file accordingly
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Resources
+
+For a Next.js/React setup please have a look here -> [p5.js-next.js](https://github.com/mkontogiannis/p5.js-next.js)
