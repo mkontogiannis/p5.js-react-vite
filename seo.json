@@ -1,6 +1,12 @@
 {
   "title": "A p5.js React/Vite boilerplate",
   "description": "A p5.js React/Vite boilerplate w/ Typescript created by Michael Kontogiannis (https://m.kontogiannis.org)",
+  "additionalMetaTags": [
+    {
+      "name": "keywords",
+      "content": "p5.js, react, vite, typescript, web art, processing, p5js, html5, michael kontogiannis"
+    }
+  ],
   "openGraph": {
     "title": "A p5.js React/Vite boilerplate",
     "description": "A p5.js React/Vite boilerplate w/ Typescript created by Michael Kontogiannis (https://m.kontogiannis.org)",

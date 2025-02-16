@@ -26,5 +26,8 @@ export const SEO = () => (
     />
     <meta property="og:locale" content={seoJson.openGraph.locale} />
     <meta property="og:site_name" content={seoJson.openGraph.site_name} />
+    {seoJson.additionalMetaTags?.map((metaTag) => (
+      <meta property={metaTag.name} content={metaTag.content} />
+    ))}
   </Helmet>
 );
